@@ -16,8 +16,8 @@ public class Task10 {
         for (String word : s_arrlist) {
             if (word.matches("\\S*\\d+\\S")) {
                 String nickname = word.toLowerCase();
-                int index_of_a = s_arrlist.indexOf(word);
-                s_arrlist.set(index_of_a, nickname);
+                int index_of_nickname = s_arrlist.indexOf(word);
+                s_arrlist.set(index_of_nickname, nickname);
             }
         }
         return String.join(" ", s_arrlist);
